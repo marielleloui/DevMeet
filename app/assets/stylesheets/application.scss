@@ -14,6 +14,14 @@
  *= require_self
  */
 
+// Got this from the Bootstrap Sass gem Github documentation
+@import 'bootstrap-sprockets';
+@import 'bootstrap'; 
+
+// Bootstrap CDN - Content Delivery Network
+// CDN - Set of servers that are designed to deliver very common assets to people's devices
+// Since Bootstrap is very popular, it's loaded on to a CDN (a network of servers optimised for speed and used a lot by the public)
+
 h1, h2, h3 {
     font-family: 'Open Sans', sans-serif
 }
