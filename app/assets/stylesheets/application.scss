@@ -17,6 +17,9 @@
 /* Got this from the Bootstrap Sass gem Github documentation */
 @import 'bootstrap-sprockets';
 @import 'bootstrap'; 
+/* Got this from the Font Awesome Sass gem Github documentation */
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 /* Bootstrap CDN - Content Delivery Network */
 /* CDN - Set of servers that are designed to deliver very common assets to people's devices */
