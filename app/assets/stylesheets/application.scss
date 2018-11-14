@@ -14,30 +14,39 @@
  *= require_self
  */
 
-// Got this from the Bootstrap Sass gem Github documentation
+/* Got this from the Bootstrap Sass gem Github documentation */
 @import 'bootstrap-sprockets';
 @import 'bootstrap'; 
 
-// Bootstrap CDN - Content Delivery Network
-// CDN - Set of servers that are designed to deliver very common assets to people's devices
-// Since Bootstrap is very popular, it's loaded on to a CDN (a network of servers optimised for speed and used a lot by the public)
+/* Bootstrap CDN - Content Delivery Network */
+/* CDN - Set of servers that are designed to deliver very common assets to people's devices */
+/* Since Bootstrap is very popular, it's loaded on to a CDN (a network of servers optimised for speed and used a lot by the public) */
 
-h1, h2, h3 {
+// Typography Styles
+.home-callout h1, h2, h3, h4 {
     color: white;
     font-family: 'Open Sans', sans-serif
 }
-
+// Background Gradient
 .navbar, .home-callout {
-    // Gradient provided by @_ighosh at uiGradients.com
+    /* Gradient provided by @_ighosh at uiGradients.com */
     background: #74ebd5;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
+// Nav Styles
 .navbar {
     border: none;
 }
-
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    &:hover {
+        color: white;
+        opacity: 0.75;
+    }
+}
+// Home Page Styles
 .home-callout {
     margin-top: -20px;
     padding-top: 50px;
