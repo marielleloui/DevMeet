@@ -26,12 +26,12 @@
 /* Since Bootstrap is very popular, it's loaded on to a CDN (a network of servers optimised for speed and used a lot by the public) */
 
 // Typography Styles
-.home-callout h1, h2, h3, h4 {
-    color: white;
+h1, h2, h3, h4 {
     font-family: 'Open Sans', sans-serif
 }
 // Background Gradient
 .navbar, .home-callout {
+    color: white;
     /* Gradient provided by @_ighosh at uiGradients.com */
     background: #74ebd5;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
