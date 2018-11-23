@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.0.1' # Rails framework itself
 # Use Puma as the app server
-gem 'puma', '3.4.0'
+gem 'puma', '3.12.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '5.0.6' # For CSS processing
 # Use Uglifier as compressor for JavaScript assets
@@ -57,6 +57,8 @@ group :production do
   # Use the PostgreSQL gem for Heroku production servers
   gem 'pg', '0.18.4' # Deploying website to production-grade (professional) servers where the public can actually visit our website
 end
+
+gem 'bundler', '1.17.1'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
