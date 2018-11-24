@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-# Creating membership plans
+# Creating membership plans, and making the Rails application aware of the membership plans
 # Will insert these records to the db through this seeds file
 Plan.create(name: 'basic', price: 0)
 Plan.create(name: 'pro', price: 10)
