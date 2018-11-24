@@ -12,4 +12,4 @@ ActionMailer::Base.smtp_settings = {
   :domain         => 'powerful-refuge-45706.herokuapp.com',
   :authentication => :plain,
 }
-ActionMailer::Base.delivery_method = :smtp
+ActionMailer::Bery_method = :smtp
