@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
   
   belongs_to :plan
+  has_one :profile
   
   # Whitelisting form data so that it could be used in the code below
   attr_accessor :stripe_card_token
