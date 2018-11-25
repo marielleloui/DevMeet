@@ -2,7 +2,7 @@
 
 // Document ready (jQuery's document ready function) - JS will fire only after the document is loaded
 $(document).on('turbolinks:load', function() {
-    var theForm = $('#pro_form');
+    var theForm = $('#pro-form');
     var submitBtn = $('#form-signup-btn');
 
     // Set Stripe public key
@@ -61,11 +61,11 @@ $(document).on('turbolinks:load', function() {
     function stripeResponseHandler(status, response) {
         // Get the token from the response
         var token = response.id;
-        
+
         // Inject the card token as a hidden field in the form
         theForm.append( $('<input type="hidden" name="user[stripe_card_token]">').val(token) );
     
         // Submit form to Rails application  
         theForm.get(0).submit();
     }
-})
+});
