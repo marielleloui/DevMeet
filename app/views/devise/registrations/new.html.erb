@@ -3,16 +3,16 @@
     <div class="col-md-6 col-md-offset-3">
       <div class="text-center">
         <% if params[:plan] == '2' %>
-          <h1>Pro Account</h1>
+          <h1 class="lg-heading">Pro Account</h1>
           <p>Sign up for $10/month and get premium access to the DevMeet community, complete with contact information</p>
         <% else %>
-          <h1>Basic Account</h1>
+          <h1 class="lg-heading">Basic Account</h1>
           <p>Sign up for free and get basic access to the community</p>
         <% end %>
       </div>
       
-      <div class="well">
-        <h2>Sign Up</h2>
+      <div class="well page-form">
+        <h2 class="sm-heading">Sign Up</h2><br>
         
         <% if params[:plan] == '2' %>
           <%= render "pro_form" %>

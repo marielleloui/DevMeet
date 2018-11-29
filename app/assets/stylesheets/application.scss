@@ -14,16 +14,12 @@
  *= require_self
  */
 
-/* Got this from the Bootstrap Sass gem Github documentation */
+/* From Bootstrap Sass gem Github documentation */
 @import 'bootstrap-sprockets';
 @import 'bootstrap'; 
-/* Got this from the Font Awesome Sass gem Github documentation */
+/* From Font Awesome Sass gem Github documentation */
 @import "font-awesome-sprockets";
 @import "font-awesome";
-
-/* Bootstrap CDN - Content Delivery Network */
-/* CDN - Set of servers that are designed to deliver very common assets to people's devices */
-/* Since Bootstrap is very popular, it's loaded on to a CDN (a network of servers optimised for speed and used a lot by the public) */
 
 // Typography Styles
 h1, h2, h3, h4 {
@@ -32,7 +28,6 @@ h1, h2, h3, h4 {
 // Background Gradient
 .navbar, .home-callout {
     color: white;
-    /* Gradient provided by @_ighosh at uiGradients.com */
     background: #74ebd5;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -62,6 +57,12 @@ h1, h2, h3, h4 {
         background-color: #94E4D6;
     }
 }
+.user-navbar-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
 // Home Page Styles
 .home-callout {
     margin-top: -20px;
@@ -71,17 +72,54 @@ h1, h2, h3, h4 {
 .home-signup-links {
   margin-top: 30px;
 }
-
+.well.page-form {
+    background-color: #f5f5f7;
+    border-width: 1px;
+    border-color: #f5f5f7;
+}
+.well.home-page, .well.sign-in-home {
+    min-height: 20px;
+    padding: 19px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background: #aab5e1;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    color: white;
+    height: 300px;
+    box-shadow: 15px 15px #CFEBF2;
+    -moz-box-shadow: 15px 15px #CFEBF2;
+    -webkit-box-shadow: 15px 15px #CFEBF2;
+}
+.btn-default {
+    color: #636060;
+}
+.btn-default.btn-block:hover,
+.btn-default.btn-block:focus,
+.navbar-btn:hover, .navbar-btn:focus,
+.form-btn:hover, .form-btn:focus {
+    color: #f7f8fe;
+    background-color: #7d8dc6;
+    border-color: #7d8dc6;
+}
 .flash-container {
   position: absolute;
   width: 100%;
 }
-
 .alert-notice, .alert-alert {
   text-align: center;
   background: rgba(255, 255, 255, 0.3);
   border-color: rgba(255, 255, 255, 0.5);
   margin-top: -14px;
+}
+.site-title {
+    font-size: 70px;
+    font-weight: 300;
+}
+.membership-tag {
+    font-size: 60px;
+    font-weight: 700;
 }
 
 // Error explanation for failed Sign Ups
@@ -89,3 +127,28 @@ h1, h2, h3, h4 {
     font-size: 12px;
 }
 
+// Site Headings
+.lg-heading {
+    font-size: 50px;
+    font-weight: 300;
+}
+.md-heading {
+    font-size: 40px;
+    font-weight: 300;
+}
+.sm-heading {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+// Responsive images
+.responsive {
+    width: 75%;
+    height: auto;
+}
+
+// Line
+hr {
+    width: 50%;
+    border-width: 3px;
+}

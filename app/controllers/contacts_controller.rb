@@ -9,18 +9,20 @@ class ContactsController < ApplicationController
     # POST request /contacts
     def create
         # Mass assignment of form fields into Contact object
-        @contact = Contact.new(contact_params) # params is kind of like mass assignment; refers to things we are passing through form fields or links; contact_params is a function that we previously defined and is found below
+        @contact = Contact.new(contact_params)
 
         # Save the Contact object to the database
         if @contact.save
-            # This is how we lift data from form fields here in the controller
+            # Lift data from form fields here in the controller
             # Store form fields via parameters, into variables
             name = params[:contact][:name] # Assigning a var name to params
             email = params[:contact][:email]
             body = params[:contact][:comments]
             
             # Plug variables into Contact Mailer email method and send email
-            ContactMailer.contact_email(name, email, body).deliver # Calling function contact_email from contact_mailer "CONTROLLER" and using the vars above as arguments. The .deliver method will fire off the email to the recipient
+            # Calling function contact_email from contact_mailer "CONTROLLER" and using the vars above as arguments
+            # The .deliver method will fire off the email to the recipient
+            ContactMailer.contact_email(name, email, body).deliver
             
             # Store success message in flash hash and redirect to the new action
             flash[:success] = "Message sent."
@@ -33,9 +35,10 @@ class ContactsController < ApplicationController
         end
     end
     
-    private # Make sure that we're saving things to our database securely
+    private
         # To collect data from form, we need to use
-        # strong parameters and whitelist the form fields (a security feature)
+        # strong parameters and whitelist the form fields (a security feature);
+        # Save info to db securely
         def contact_params
             params.require(:contact).permit(:name, :email, :comments)
         end

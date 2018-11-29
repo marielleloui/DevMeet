@@ -1,6 +1,10 @@
 <div class="home-callout text-center container-fluid">
-    <h1>Welcome to DevMeet</h1>
-    <h4>A professional space where entrepreneurs can meet and collaborate with developers.</h4>
+    <% if user_signed_in? %>
+        <h1 class="site-title">DevMeet Home</h1>
+    <% else %>
+        <h1 class="site-title">Welcome to DevMeet</h1>
+    <% end %>
+    <h3>A professional space where developers, entrepreneurs, and investors can meet.</h3>
 </div>
 
 <div class="container home-signup-links">
@@ -8,38 +12,40 @@
         
         <% if user_signed_in? %>
             <div class="col-md-6">
-                <div class="well">
-                    <h2 class="text-center">Your Profile</h2>
+                <div class="well sign-in-home">
+                    <h2 class="text-center md-heading">Your Profile</h2>
                     <!--If the user has created a profile, then he/she must be able to view or edit his/her profile-->
                     <% if current_user.profile %>
-                        <%= link_to "Edit your profile", edit_user_profile_path(user_id: current_user.id), class: 'btn btn-default btn-lg btn-block' %>
+                        <br><br><%= link_to "Edit your profile", edit_user_profile_path(user_id: current_user.id), class: 'btn btn-default btn-lg btn-block' %>
                         <%= link_to "View your profile", user_path(id: current_user.id), class: 'btn btn-default btn-lg btn-block' %>
                     <% else %>
-                        <p class="text-center">Create your profile so that you can share your information with the community.</p>
+                        <p class="text-center">Create your profile so that you can share your information with the community.</p><br><br>
                         <%= link_to "Create your profile", new_user_profile_path(user_id: current_user.id), class: 'btn btn-default btn-lg btn-block' %>
                     <% end %>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="well">
-                    <h2 class="text-center">The Community</h2>
-                    <p class="text-center">Visit the community to meet other developers, entrepreneurs, and investors.</p>
+                <div class="well sign-in-home">
+                    <h2 class="text-center md-heading">The Community</h2>
+                    <p class="text-center">Visit the community to meet other developers, entrepreneurs, and investors.</p><br><br>
                     <%= link_to "Visit the community", users_path, class: 'btn btn-default btn-lg btn-block' %>
         <% else %>
             <div class="col-md-6">
-                <div class="well">
-                    <h3 class="text-center">Basic Membership</h3>
+                <div class="well home-page">
+                    <h1 class="membership-tag text-center">BASIC</h1>
+                    <h4 class="text-center">M E M B E R S H I P</h4>
                     <p class="text-center">Sign up for free and get basic access to the DevMeet community</p>
                     <br><br>
-                    <%= link_to "Sign up with Basic", new_user_registration_path(plan: @basic_plan.id), class: "btn btn-info btn-block" %>
+                    <%= link_to "Sign up with Basic", new_user_registration_path(plan: @basic_plan.id), class: "btn btn-default btn-block" %>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="well">
-                    <h3 class="text-center">Pro Membership</h3>
+                <div class="well home-page">
+                    <h1 class="membership-tag text-center">PRO</h1>
+                    <h4 class="text-center">M E M B E R S H I P</h4>
                     <p class="text-center">Sign up for the Pro account for $10/month and get premium access to the DevMeet community, complete with contact information</p>
                     <br>
-                    <%= link_to "Sign up with Pro", new_user_registration_path(plan: @pro_plan.id), class: "btn btn-info btn-block" %>
+                    <%= link_to "Sign up with Pro", new_user_registration_path(plan: @pro_plan.id), class: "btn btn-default btn-block" %>
                 </div>
             </div>
         <% end %>

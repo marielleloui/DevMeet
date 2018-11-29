@@ -1,34 +1,22 @@
+// Profile Page
 .avatar-show-img {
     width: 200px;
     height: 200px;
 }
-
 .job-title-icon {
     display: inline-block;
     width: 30px;
     height: 30px;
-    border: 2px solid #2e6da4;
     border-radius: 4px;
-    background-color: #337ab7;
+    background-color: #77c9dc;
     color: white;
     text-align: center;
 }
-
-.well.profile-block {
-    color: #fff;
-    h3 {
-        margin-top: 0;
-    }
-}
-
-.well.profile-description {
-    background-color: #5bc0de;
-    border-color: #46b8da;
-}
-
-.well.profile-contact-info {
-    background-color: #5bc0de;
-    border-color: #46b8da;
+.label-default.job-title-description {
+    background-color: #5db3c5;
+    color: white;
+    text-align: center;
+    font-size: 12px;
 }
 
 // User Index Page Styles
@@ -37,7 +25,45 @@
     height: 128px;
     border-radius: 50%;
 }
+.sm-heading-index {
+    font-size: 34px;
+    font-weight: 300;
+    color: #5566a6;
+    &:hover, :focus {
+        text-decoration: none;
+        font-size: 33px; 
+    }
+}
+.label.label-danger {
+    background-color: #5566a6;
+}
+.name-link a:hover, .name-link a:focus {
+    text-decoration: none;
+}
 
+// Wells
+.well.profile-block {
+    color: #fff;
+    h3 {
+        margin-top: 0;
+    }
+}
+.well.profile-description {
+    background: #a3add6;
+}
+.well.profile-contact-info {
+    background-color: white;
+    border-width: 2px;
+    border-color: #5566a6;
+    color: #5566a6;
+}
 .well.white-bg {
     background-color: white;
+    border-width: 1px;
+    border-color: #5566a6;
+}
+.well.lt-purple-bg {
+    background-color: #eaebef;
+    border-width: 1px;
+    border-color: #eaebef
 }
