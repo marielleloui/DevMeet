@@ -1,7 +1,7 @@
 # DevMeet, a full-stack Ruby on Rails web app
 ---
 ## Author
-Marielle Louise Cruz
+#### Marielle Louise Cruz
 * https://github.com/marielleloui
 * https://linkedin.com/marielle-louise-cruz
 
@@ -76,7 +76,11 @@ Credit card processing is solely handled by Stripe, and is therefore, secure.
 ---
 # Site Images
 ![DevMeet Home View](https://github.com/marielleloui/DevMeet/blob/master/public/images/devmeet-home-view.png)
+
 ![DevMeet Pro Sign Up Form](https://github.com/marielleloui/DevMeet/blob/master/public/images/devmeet-pro-sign-up.png)
+
 ![DevMeet Community](https://github.com/marielleloui/DevMeet/blob/master/public/images/devmeet-community.png)
+
 ![DevMeet User Profile](https://github.com/marielleloui/DevMeet/blob/master/public/images/devmeet-user-profile.png)
-![DevMeet Account Management](https://github.com/marielleloui/DevMeet/blob/master/public/images/devmeet-account-management.png)
+
+![DevMeet Account Management](https://github.com/marielleloui/DevMeet/blob/master/public/images/devmeet-account-management.png)  
