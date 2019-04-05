@@ -3,7 +3,7 @@
 ## Author
 #### Marielle Louise Cruz
 * https://github.com/marielleloui
-* https://linkedin.com/marielle-louise-cruz
+* https://linkedin.com/in/marielle-louise-cruz
 
 ## About DevMeet
 DevMeet is a fictitious startup that aims to provide a networking platform where developers, entrepreneurs, and investors can meet. To bring this vision to life, I have created a __full-stack web application__ that utilises the __Ruby on Rails framework__, combined with other tools and technologies which will be further described in this README.
